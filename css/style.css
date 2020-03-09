@@ -103,7 +103,6 @@ span{
     background-color: #625e77; 
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    cursor: pointer;
 }
 
 .section div:active{
@@ -112,6 +111,10 @@ span{
 
 .section div input:checked+label {
 text-decoration: line-through;
+}
+
+.section div input+label{
+    cursor: pointer;
 }
 
 .submit{
