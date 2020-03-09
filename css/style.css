@@ -1,0 +1,129 @@
+body {
+    background: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+/* не применила селектор по атрибуту */
+
+*{transition: all .1s ease-in;}
+
+.block{
+    background-color: #4a4f56;
+    border: 15px white solid;
+    margin: auto;
+}
+
+.mainer{    
+    background-color: #3b3f45;
+    padding-bottom: 80px;
+    padding-top: 1px;
+}
+
+header {
+    text-align: center; 
+    
+}
+
+header .caption{
+    font-size: 24pt;
+    margin-top: 15px;
+    margin-bottom: -8px;
+    font-weight: bold;
+}
+
+header .description{
+    font-size: 14pt;
+}
+ 
+div.caption , div.description, .submit{
+    color: #eb7e7f;;
+}
+
+div.caption , div.description,
+.mainer .section label, .submit {
+    font-family: Trebuchet, Arial, sans-serif;
+}
+
+div.mainer{
+margin-top: 30px;
+}
+
+div .section{
+    margin: 30px auto 30px;
+    color: white;
+    font-size: 14pt;
+    text-align: left;
+}
+.block1 label:after {
+    content: " (for the next lesson about CSS)";
+  }
+
+  .block2 label:after{
+    content: " (for more CSS manipulations)";
+  }
+
+  div label:after{
+    color: white; 
+    font-size: 8pt;
+    padding: 2px;
+  }
+
+  /*span is much shorter*/
+
+span{
+    font-size: 8pt;
+}
+
+.section div{
+    height: 50px;
+    width: 600px;
+    margin: auto;
+    line-height: 50px; 
+    font-size: 14pt;
+    background-color: #88839e;
+}
+
+.section :nth-of-type(2n) {
+    background-color: #7a7593;
+}
+
+.section div:hover{
+    background-color: #625e77; 
+    border-top: white 2px solid;
+    border-bottom: white 2px solid;
+}
+
+.section div:active{
+    background-color: #eb7e7f;
+}
+
+
+.section div input:checked+label {
+text-decoration: line-through;
+}
+
+.submit{
+    background-color: #4a4f56;
+    height: 50px;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px; 
+    font-size: 14pt;
+}
+
