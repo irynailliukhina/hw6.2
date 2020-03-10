@@ -3,6 +3,9 @@ body {
     text-decoration: none;
     width: 100%;
     height: 100%;
+    
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -96,6 +99,7 @@ span{
     line-height: 50px; 
     font-size: 14pt;
     background-color: #88839e;
+    border: 2px solid transparent;
 }
 
 .section :nth-of-type(2n) {
@@ -115,6 +119,10 @@ span{
 
 .section div input:checked+label {
 text-decoration: line-through;
+}
+
+.section div input+label{
+    cursor: pointer;
 }
 
 .submit{
